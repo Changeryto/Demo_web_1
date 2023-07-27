@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> <!-- No debe haber información desplegable en head, si no información para el navegador-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Químicos y Bacteriológicos</title>
+    
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS no avisa de forma nativa si hay código sin usar, hay valores por default en algunos elementos-->
+    <link rel="preload" href="css/styles.css" as ="style">
+    <!--Esto mejora el desempeño de la página-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Rubén Téllez Gerardo <span>Químico Bacteriólogo</span></h1> <!-- Los espacios en blanco se ignoran, sólo 1 h1 por archivo-->
+    </header>
+
+    <div class="nav-bg">
+        <!-- Para colocar los enlaces, aún se usa etiqueta li, si es de múltiples niveles-->
+        <nav class="navegacion-principal contenedor"> 
+            <a href="#">Inicio</a> 
+            <a href="#">Sobre mí</a> 
+            <a href="#">Clientes</a> 
+            <a href="#">Contactos</a> 
+            <!--El signo de gato se coloca para simular un enlace a un archivo que aún no se tiene-->
+            <!--cntrl shift alt arrow: duplica líneas-->
+            
+        </nav>
+    </div>
+        
+        <!-- hx va indicando la relevancia del contenido-->
+        <!-- No se suele usar más allá de h3, pero existe hasta h6, el más pequeño por defecto-->
+        <!--Si el primer elemento hijo de la etiqueta es un heading, hay que usar un section a menos que sea el contenido principal, en cuyo caso se usaría main, esto porque el heading se usa para introducir nuevo contenido-->
+
+    <section class="hero"> 
+        <div class="contenido-hero">
+            <h2>Análisis químicos y microbiológicos <span>IPN</span></h2>
+
+            
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+
+                <p>
+                    Pachuca, Hidalgo
+                </p>
+            </div>
+            
+
+            <a class="boton" href="#">Contactar</a>
+            <!--No se recomienda tener todo en mayúsculas en el texto, eso lo modifica CSS-->
+        </div>
+    </section>
+    
+
+
+
+    <main class="contenedor sombra">
+        <h2>Mis servicios</h2>
+
+        <div class="servicios">
+
+            <section class="servicio">
+                <h3>Fisicoquímica del suelo</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plant-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M2 9a10 10 0 1 0 20 0" />
+                            <path d="M12 19a10 10 0 0 1 10 -10" />
+                            <path d="M2 9a10 10 0 0 1 10 10" />
+                            <path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" />
+                            <path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" />
+                        </svg>
+                    </div> <!-- Termina div de icono-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere quibusdam ratione? Beatae quam tempore officia animi, ut odio aperiam est veniam, soluta porro earum natus quisquam. Quae, quos corporis</p>
+            </section>
+            
+            <section class="servicio">
+                <h3>Análisis microbiológicos humanos</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microscope" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 21h14" />
+                            <path d="M6 18h2" />
+                            <path d="M7 18v3" />
+                            <path d="M9 11l3 3l6 -6l-3 -3z" />
+                            <path d="M10.5 12.5l-1.5 1.5" />
+                            <path d="M17 3l3 3" />
+                            <path d="M12 21a6 6 0 0 0 3.715 -10.712" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                            <path d="M11.993 16.75l2.747 -2.815a1.9 1.9 0 0 0 0 -2.632a1.775 1.775 0 0 0 -2.56 0l-.183 .188l-.183 -.189a1.775 1.775 0 0 0 -2.56 0a1.899 1.899 0 0 0 0 2.632l2.738 2.825z" />
+                        </svg>
+                    </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere quibusdam ratione? Beatae quam tempore officia animi, ut odio aperiam est veniam, soluta porro earum natus quisquam. Quae, quos corporis</p>
+            </section>
+            
+            <section class="servicio">
+                <h3>Análisis microiológicos de alimentos</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-carrot" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 21s9.834 -3.489 12.684 -6.34a4.487 4.487 0 0 0 0 -6.344a4.483 4.483 0 0 0 -6.342 0c-2.86 2.861 -6.347 12.689 -6.347 12.689z" />
+                        <path d="M9 13l-1.5 -1.5" />
+                        <path d="M16 14l-2 -2" />
+                        <path d="M22 8s-1.14 -2 -3 -2c-1.406 0 -3 2 -3 2s1.14 2 3 2s3 -2 3 -2z" />
+                        <path d="M16 2s-2 1.14 -2 3s2 3 2 3s2 -1.577 2 -3c0 -1.86 -2 -3 -2 -3z" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere quibusdam ratione? Beatae quam tempore officia animi, ut odio aperiam est veniam, soluta porro earum natus quisquam. Quae, quos corporis</p>
+            </section>
+        </div> <!-- Cierre de la clase de servicios-->
+    
+
+        <section>
+            <h2>Contacto</h2>
+
+
+            <form action="" class="formulario">
+                <!-- fieldset da título al forulario-->
+                <fieldset>
+                    <legend>Contáctame llenando todos los campos</legend>
+
+                    <div class="contenedor-campos"> <!--Contenedor de los campos-->
+                        <div class="campo">
+                            <!--label da indicación al usuario de cada capo-->
+                            <label for="">Nombre</label>
+                            <!--text, tel (numérico del teléfono), email, number (restringe letras)-->
+                            <input class="input-text" type="text" placeholder="Tu nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="10 números">
+                        </div>
+                        
+
+                    
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu correo electrónico">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text" name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                            <!--textarea tiene apertura, cierre y puede cambiar su tamaño-->
+                        </div>
+
+                        
+                        
+                    
+                </div>
+
+                <div class="alinear-derecha flex">
+                    <input class="boton w-100-sm" type="submit" value="Enviar">
+                    <!--Alternativamente puede usarse la etiqueta button-->
+                </div>
+
+                </fieldset>
+            </form>
+        
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. QBP Rubén Téllez Gerardo.</p>
+    </footer>
+
+    
+
+
+
+</body>
+</html>
